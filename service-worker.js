@@ -1,4 +1,4 @@
-const CACHE_NAME = 'wenlian-v3';
+const CACHE_NAME = 'wenlian-v4';
 const APP_SHELL = [
   './', './index.html', './styles.css', './app.js', './workout-data.js',
   './manifest.webmanifest', './offline.html', './icon-192.png', './icon-512.png',
