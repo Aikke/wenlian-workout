@@ -149,7 +149,7 @@
 
     elements.playLabel.textContent = state.running ? '暂停' : state.remaining === step.duration ? '开始' : '继续';
     elements.playIcon.innerHTML = state.running ? '<path d="M7 5h4v14H7zm6 0h4v14h-4z"/>' : '<path d="M8 5v14l11-7z"/>';
-    elements.skipButton.textContent = step.kind === 'movement' && step.stageId === 'strength' ? '当前器械被占用，先跳过' : '跳过当前项目';
+    elements.skipButton.textContent = '跳过当前动作';
   }
 
   function cue(frequency, duration) {
