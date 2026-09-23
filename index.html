@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
@@ -6,9 +6,9 @@
   <meta name="theme-color" content="#101417">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="绋崇粌">
-  <meta name="description" content="閫傚悎鍋ヨ韩鎴挎柊鎵嬬殑寮瑰姏甯︾儹韬€佸櫒姊拌缁冨拰娉℃搏杞存斁鏉捐窡缁冭鏃跺櫒銆?>
-  <title>绋崇粌 路 鏂版墜鍋ヨ韩鎴胯窡缁?/title>
+  <meta name="apple-mobile-web-app-title" content="稳练">
+  <meta name="description" content="适合健身房新手的弹力带热身、器械训练和泡沫轴放松跟练计时器。">
+  <title>稳练 · 新手健身房跟练</title>
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="apple-touch-icon" href="icon-192.png">
   <link rel="icon" href="icon-192.png">
@@ -18,81 +18,81 @@
   <main class="app-shell">
     <section id="start-view" class="view start-view" aria-labelledby="start-title">
       <header class="brand-row">
-        <a class="brand" href="#" aria-label="绋崇粌棣栭〉"><span class="brand-mark" aria-hidden="true"></span>绋崇粌</a>
-        <span class="edition">鏂版墜 路 鍏ㄨ韩鏃?/span>
+        <a class="brand" href="#" aria-label="稳练首页"><span class="brand-mark" aria-hidden="true"></span>稳练</a>
+        <span class="edition">新手 · 全身日</span>
       </header>
 
       <div class="hero-grid">
         <div class="hero-copy">
           <p class="eyebrow">STEADY / FULL BODY</p>
-          <h1 id="start-title">浠婂ぉ鐨勮韩浣擄紝<br><span>鍊煎緱涓€灏忔椂鐨勪笓娉ㄣ€?/span></h1>
-          <div class="hero-metrics" aria-label="璁粌鎽樿">
-            <div><strong>62</strong><span>鍒嗛挓</span></div>
-            <div><strong>18</strong><span>璁粌缁?/span></div>
-            <div><strong>06</strong><span>鍣ㄦ鍔ㄤ綔</span></div>
+          <h1 id="start-title">今天的身体，<br><span>值得一小时的专注。</span></h1>
+          <div class="hero-metrics" aria-label="训练摘要">
+            <div><strong>62</strong><span>分钟</span></div>
+            <div><strong>18</strong><span>训练组</span></div>
+            <div><strong>06</strong><span>器械动作</span></div>
           </div>
           <button id="start-button" class="primary-button start-button" type="button">
-            <span>杩涘叆浠婃棩璁粌</span>
+            <span>进入今日训练</span>
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
           </button>
-          <button id="install-button" class="install-button" type="button" hidden>瀹夎鍒版墜鏈烘闈?/button>
-          <p class="start-note">寮瑰姏甯︾儹韬?路 鍥哄畾鍣ㄦ 路 娉℃搏杞存敹灏?/p>
+          <button id="install-button" class="install-button" type="button" hidden>安装到手机桌面</button>
+          <p class="start-note">弹力带热身 · 固定器械 · 泡沫轴收尾</p>
         </div>
 
-        <aside class="session-ticket" aria-label="鏈璁粌姒傝">
+        <aside class="session-ticket" aria-label="本次训练概览">
           <div class="ticket-top"><span>SESSION 01</span><span>BEGINNER</span></div>
           <div class="duration-block">
             <strong id="plan-minutes">61</strong>
-            <div><span>鍒嗛挓</span><small>棰勮鎬绘椂闀?/small></div>
+            <div><span>分钟</span><small>预计总时长</small></div>
           </div>
           <div class="ticket-rule"></div>
           <dl class="ticket-stats">
-            <div><dt>鐑韩</dt><dd>寮瑰姏甯?+ 蹇蛋</dd></div>
-            <div><dt>璁粌</dt><dd>6 鍔ㄤ綔 路 3 脳 12</dd></div>
-            <div><dt>浼戞伅</dt><dd>70 绉?路 鍙殏鍋?/dd></div>
-            <div><dt>鏀跺熬</dt><dd>娉℃搏杞存斁鏉?/dd></div>
+            <div><dt>热身</dt><dd>弹力带 + 快走</dd></div>
+            <div><dt>训练</dt><dd>6 动作 · 3 × 12</dd></div>
+            <div><dt>休息</dt><dd>70 秒 · 可暂停</dd></div>
+            <div><dt>收尾</dt><dd>泡沫轴放松</dd></div>
           </dl>
         </aside>
       </div>
 
       <section class="route-section" aria-labelledby="route-title">
-        <div class="section-heading"><p class="eyebrow">TODAY'S ROUTE</p><h2 id="route-title">浠婂ぉ鐨勮缁冭矾绾?/h2></div>
+        <div class="section-heading"><p class="eyebrow">TODAY'S ROUTE</p><h2 id="route-title">今天的训练路线</h2></div>
         <div id="route-cards" class="route-cards"></div>
       </section>
 
       <aside class="safety-card">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2.8 20h18.4L12 3Zm0 5.5v5.8m0 2.7v.1"/></svg>
-        <div><strong>鍔ㄤ綔绋冲畾姣旈噸閲忛噸瑕?/strong><p>绗竴娆′娇鐢ㄥ櫒姊板厛璇峰伐浣滀汉鍛樼‘璁よ皟鑺傛柟寮忋€傚嚭鐜扮柤鐥涖€佸ご鏅曟垨鑳搁椃锛岀珛鍗冲仠姝€?/p></div>
+        <div><strong>动作稳定比重量重要</strong><p>第一次使用器械先请工作人员确认调节方式。出现疼痛、头晕或胸闷，立即停止。</p></div>
       </aside>
     </section>
 
     <section id="workout-view" class="view workout-view" aria-labelledby="exercise-name" hidden>
       <header class="workout-header">
-        <button id="exit-button" class="icon-button" type="button" aria-label="閫€鍑烘湰娆¤缁?>
+        <button id="exit-button" class="icon-button" type="button" aria-label="退出本次训练">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
         </button>
-        <div class="workout-brand">绋崇粌 <span>LIVE</span></div>
+        <div class="workout-brand">稳练 <span>LIVE</span></div>
         <div id="elapsed-time" class="elapsed-time">00:00</div>
       </header>
 
       <div class="progress-wrap">
-        <div class="progress-meta"><span id="progress-label">绗?1 / 1 椤?/span><span id="remaining-label">鍓╀綑绾?61 鍒嗛挓</span></div>
-        <div class="progress-track" role="progressbar" aria-label="璁粌鎬昏繘搴? aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span id="progress-bar"></span></div>
+        <div class="progress-meta"><span id="progress-label">第 1 / 1 项</span><span id="remaining-label">剩余约 61 分钟</span></div>
+        <div class="progress-track" role="progressbar" aria-label="训练总进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span id="progress-bar"></span></div>
       </div>
 
       <article class="exercise-console">
-        <div class="console-kicker"><span id="stage-dot"></span><span id="stage-label">鐑韩</span><span id="equipment-label">寮瑰姏甯?/span></div>
-        <h1 id="exercise-name">寮瑰姏甯﹁偐閮ㄧ粫鐜?/h1>
-        <p id="exercise-subtitle" class="exercise-subtitle">鑲╄儧娲诲姩 路 灏忓箙搴︺€佹參閫熷害</p>
+        <div class="console-kicker"><span id="stage-dot"></span><span id="stage-label">热身</span><span id="equipment-label">弹力带</span></div>
+        <h1 id="exercise-name">弹力带肩部绕环</h1>
+        <p id="exercise-subtitle" class="exercise-subtitle">肩胛活动 · 小幅度、慢速度</p>
 
-        <button id="exercise-image-button" class="exercise-image-button" type="button" aria-label="鏀惧ぇ鏌ョ湅褰撳墠鍔ㄤ綔绀烘剰鍥?>
-          <img id="exercise-image" src="band-circles.webp" alt="寮瑰姏甯﹁偐閮ㄧ粫鐜姩浣滅ず鎰忓浘">
-          <span>鐐瑰嚮鏀惧ぇ 路 鐢ㄤ簬鍔ㄤ綔鍜屽櫒姊拌瘑鍒?/span>
+        <button id="exercise-image-button" class="exercise-image-button" type="button" aria-label="放大查看当前动作示意图">
+          <img id="exercise-image" src="band-circles.webp" alt="弹力带肩部绕环动作示意图">
+          <span>点击放大 · 用于动作和器械识别</span>
         </button>
 
         <div class="exercise-metrics">
-          <div id="set-metric"><small>缁勬暟</small><strong id="set-label">鈥?/strong></div>
-          <div id="rep-metric"><small>鐩爣</small><strong id="rep-label">15 娆?/strong></div>
+          <div id="set-metric"><small>组数</small><strong id="set-label">—</strong></div>
+          <div id="rep-metric"><small>目标</small><strong id="rep-label">15 次</strong></div>
         </div>
 
         <div class="timer-ring" aria-live="polite">
@@ -100,45 +100,44 @@
             <circle class="timer-track" cx="60" cy="60" r="53"></circle>
             <circle id="timer-progress" class="timer-progress" cx="60" cy="60" r="53"></circle>
           </svg>
-          <div class="timer-copy"><strong id="timer-display">00:45</strong><span id="timer-status">鍑嗗寮€濮?/span></div>
+          <div class="timer-copy"><strong id="timer-display">00:45</strong><span id="timer-status">准备开始</span></div>
         </div>
 
-        <div class="tip-card"><span>鍔ㄤ綔鎻愮ず</span><p id="stage-description">鐢ㄥ脊鍔涘甫鍞ら啋鑲╄儗鍜屼笅鑲紝鍐嶇敤蹇蛋鎶婁綋娓╂媺璧锋潵銆?/p></div>
-        <div class="next-card"><span>涓嬩竴椤?/span><strong id="next-label">寮瑰姏甯︽媺寮€</strong></div>
+        <div class="tip-card"><span>动作提示</span><p id="stage-description">用弹力带唤醒肩背和下肢，再用快走把体温拉起来。</p></div>
+        <div class="next-card"><span>下一项</span><strong id="next-label">弹力带拉开</strong></div>
       </article>
 
-      <div class="controls" aria-label="璁粌鎺у埗">
-        <button id="previous-button" class="secondary-control" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg><span>涓婁竴椤?/span></button>
-        <button id="play-button" class="play-control" type="button"><svg id="play-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg><span id="play-label">寮€濮?/span></button>
-        <button id="next-button" class="secondary-control" type="button"><span>涓嬩竴椤?/span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+      <div class="controls" aria-label="训练控制">
+        <button id="previous-button" class="secondary-control" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg><span>上一项</span></button>
+        <button id="play-button" class="play-control" type="button"><svg id="play-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg><span id="play-label">开始</span></button>
+        <button id="next-button" class="secondary-control" type="button"><span>下一项</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
       </div>
-      <button id="skip-button" class="skip-button" type="button">褰撳墠鍣ㄦ琚崰鐢紝鍏堣烦杩?/button>
+      <button id="skip-button" class="skip-button" type="button">当前器械被占用，先跳过</button>
     </section>
 
     <section id="complete-view" class="view complete-view" aria-labelledby="complete-title" hidden>
       <div class="completion-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></svg></div>
       <p class="eyebrow">SESSION COMPLETE</p>
-      <h1 id="complete-title">浠婂ぉ锛岀ǔ绋崇粌瀹屼簡銆?/h1>
-      <p class="completion-copy">绗竴娆′笉闇€瑕佸畬缇庛€傝浣忓櫒姊颁綅缃€佺啛鎮夊姩浣滆妭濂忥紝灏辨槸寰堟墡瀹炵殑杩涙銆?/p>
+      <h1 id="complete-title">今天，稳稳练完了。</h1>
+      <p class="completion-copy">第一次不需要完美。记住器械位置、熟悉动作节奏，就是很扎实的进步。</p>
       <div class="summary-grid">
-        <div><span>璁粌鐢ㄦ椂</span><strong id="summary-time">00:00</strong></div>
-        <div><span>瀹屾垚椤圭洰</span><strong id="summary-steps">0</strong></div>
-        <div><span>鍔涢噺鍔ㄤ綔</span><strong>6</strong></div>
+        <div><span>训练用时</span><strong id="summary-time">00:00</strong></div>
+        <div><span>完成项目</span><strong id="summary-steps">0</strong></div>
+        <div><span>力量动作</span><strong>6</strong></div>
       </div>
-      <aside class="next-time"><span>涓嬫寤鸿</span><p>鍏堜娇鐢ㄧ浉鍚岄噸閲忋€傚彧鏈夊綋 12 娆￠兘绋冲畾銆佹渶鍚庡嚑娆′粛鑳戒繚鎸佸Э鍔挎椂锛屽啀灏忓箙鍔犻噸銆?/p></aside>
-      <button id="restart-button" class="primary-button" type="button">閲嶆柊寮€濮?/button>
+      <aside class="next-time"><span>下次建议</span><p>先使用相同重量。只有当 12 次都稳定、最后几次仍能保持姿势时，再小幅加重。</p></aside>
+      <button id="restart-button" class="primary-button" type="button">重新开始</button>
     </section>
   </main>
 
   <dialog id="image-dialog" class="image-dialog" aria-labelledby="image-dialog-title">
-    <button id="image-dialog-close" class="image-dialog-close" type="button" aria-label="鍏抽棴澶у浘">脳</button>
+    <button id="image-dialog-close" class="image-dialog-close" type="button" aria-label="关闭大图">×</button>
     <img id="image-dialog-image" src="band-circles.webp" alt="">
-    <h2 id="image-dialog-title">寮瑰姏甯﹁偐閮ㄧ粫鐜?/h2>
-    <p>鍥剧墖鐢ㄤ簬甯姪鐞嗚В鍔ㄤ綔鍜屽鎵惧櫒姊帮紱浠ョ幇鍦哄櫒姊拌鏄庡強宸ヤ綔浜哄憳鎸囧涓哄噯銆?/p>
+    <h2 id="image-dialog-title">弹力带肩部绕环</h2>
+    <p>图片用于帮助理解动作和寻找器械；以现场器械说明及工作人员指导为准。</p>
   </dialog>
 
   <script src="workout-data.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
-
