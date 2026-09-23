@@ -1,7 +1,7 @@
-{
-  "name": "稳练 · 新手健身房跟练",
-  "short_name": "稳练",
-  "description": "弹力带热身、固定器械训练和泡沫轴放松的手机跟练计时器。",
+﻿{
+  "name": "绋崇粌 路 鏂版墜鍋ヨ韩鎴胯窡缁?,
+  "short_name": "绋崇粌",
+  "description": "寮瑰姏甯︾儹韬€佸浐瀹氬櫒姊拌缁冨拰娉℃搏杞存斁鏉剧殑鎵嬫満璺熺粌璁℃椂鍣ㄣ€?,
   "lang": "zh-CN",
   "start_url": "./",
   "scope": "./",
@@ -10,7 +10,8 @@
   "background_color": "#101417",
   "theme_color": "#101417",
   "icons": [
-    { "src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
-    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
   ]
 }
+

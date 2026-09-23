@@ -1,4 +1,4 @@
-(function () {
+﻿(function () {
   'use strict';
 
   const { workoutPlan, flattenSteps, getPlanDurationSeconds } = window.WorkoutData;
@@ -81,7 +81,7 @@
   function renderRoute() {
     elements.routeCards.innerHTML = workoutPlan.map((stage, index) => {
       const minutes = Math.round(steps.filter((step) => step.stageId === stage.id).reduce((sum, step) => sum + step.duration, 0) / 60);
-      const detail = stage.id === 'strength' ? '6 个器械动作 · 每个 3 × 12' : `${stage.steps.length} 个步骤`;
+      const detail = stage.id === 'strength' ? '6 涓櫒姊板姩浣?路 姣忎釜 3 脳 12' : `${stage.steps.length} 涓楠;
       return `<article class="route-card" data-index="0${index + 1}" data-tone="${stage.tone}">
         <div class="route-top"><span>${detail}</span><span>${minutes} MIN</span></div>
         <h3>${stage.label}</h3>
@@ -108,8 +108,8 @@
     const strokeOffset = circumference * (1 - state.remaining / step.duration);
     const accent = colorForTone(step.stageTone);
 
-    elements.progressLabel.textContent = `第 ${state.index + 1} / ${steps.length} 项`;
-    elements.remainingLabel.textContent = `剩余约 ${Math.ceil(getRemainingPlanSeconds() / 60)} 分钟`;
+    elements.progressLabel.textContent = `绗?${state.index + 1} / ${steps.length} 椤筦;
+    elements.remainingLabel.textContent = `鍓╀綑绾?${Math.ceil(getRemainingPlanSeconds() / 60)} 鍒嗛挓`;
     elements.progressBar.style.width = `${Math.max(0, Math.min(100, progress))}%`;
     elements.progressTrack.setAttribute('aria-valuenow', String(Math.round(progress)));
     elements.progressBar.style.background = accent;
@@ -119,15 +119,15 @@
     elements.exerciseName.textContent = step.name;
     elements.exerciseSubtitle.textContent = step.subtitle;
     elements.exerciseImage.src = step.image;
-    elements.exerciseImage.alt = `${step.name}动作或器械示意图`;
-    elements.exerciseImageButton.setAttribute('aria-label', `放大查看${step.name}示意图`);
+    elements.exerciseImage.alt = `${step.name}鍔ㄤ綔鎴栧櫒姊扮ず鎰忓浘`;
+    elements.exerciseImageButton.setAttribute('aria-label', `鏀惧ぇ鏌ョ湅${step.name}绀烘剰鍥綻);
     elements.timerDisplay.textContent = formatTime(state.remaining);
     elements.timerProgress.style.strokeDasharray = String(circumference);
     elements.timerProgress.style.strokeDashoffset = String(strokeOffset);
     elements.timerProgress.style.stroke = accent;
-    elements.timerStatus.textContent = state.running ? (step.kind === 'rest' ? '放松呼吸' : step.kind === 'transition' ? '从容换器械' : '保持稳定节奏') : '已暂停 · 时间不会流走';
+    elements.timerStatus.textContent = state.running ? (step.kind === 'rest' ? '鏀炬澗鍛煎惛' : step.kind === 'transition' ? '浠庡鎹㈠櫒姊? : '淇濇寔绋冲畾鑺傚') : '宸叉殏鍋?路 鏃堕棿涓嶄細娴佽蛋';
     elements.stageDescription.textContent = stage.description;
-    elements.nextLabel.textContent = steps[state.index + 1]?.name || '训练完成';
+    elements.nextLabel.textContent = steps[state.index + 1]?.name || '璁粌瀹屾垚';
     elements.elapsedTime.textContent = formatTime(state.elapsed);
     elements.previousButton.disabled = state.index === 0;
 
@@ -142,14 +142,14 @@
     }
     if (step.reps) {
       elements.repMetric.hidden = false;
-      elements.repLabel.textContent = `${step.reps} 次`;
+      elements.repLabel.textContent = `${step.reps} 娆;
     } else {
       elements.repMetric.hidden = true;
     }
 
-    elements.playLabel.textContent = state.running ? '暂停' : state.remaining === step.duration ? '开始' : '继续';
+    elements.playLabel.textContent = state.running ? '鏆傚仠' : state.remaining === step.duration ? '寮€濮? : '缁х画';
     elements.playIcon.innerHTML = state.running ? '<path d="M7 5h4v14H7zm6 0h4v14h-4z"/>' : '<path d="M8 5v14l11-7z"/>';
-    elements.skipButton.textContent = step.kind === 'movement' && step.stageId === 'strength' ? '当前器械被占用，先跳过' : '跳过当前项目';
+    elements.skipButton.textContent = step.kind === 'movement' && step.stageId === 'strength' ? '褰撳墠鍣ㄦ琚崰鐢紝鍏堣烦杩? : '璺宠繃褰撳墠椤圭洰';
   }
 
   function cue(frequency, duration) {
@@ -254,7 +254,7 @@
   function openExerciseImage() {
     const step = steps[state.index];
     elements.imageDialogImage.src = step.image;
-    elements.imageDialogImage.alt = `${step.name}动作或器械示意图`;
+    elements.imageDialogImage.alt = `${step.name}鍔ㄤ綔鎴栧櫒姊扮ず鎰忓浘`;
     elements.imageDialogTitle.textContent = step.name;
     elements.imageDialog.showModal();
   }
@@ -299,3 +299,4 @@
     if (document.hidden && state.running) pauseTimer();
   });
 }());
+

@@ -1,15 +1,15 @@
-const CACHE_NAME = 'wenlian-v2';
+﻿const CACHE_NAME = 'wenlian-v2';
 const APP_SHELL = [
   './', './index.html', './styles.css', './app.js', './workout-data.js',
-  './manifest.webmanifest', './offline.html', './assets/icon-192.png', './assets/icon-512.png',
-  './assets/exercises/band-circles.webp', './assets/exercises/band-pull-apart.webp',
-  './assets/exercises/band-face-pull.webp', './assets/exercises/band-squat.webp',
-  './assets/exercises/treadmill-walk.webp', './assets/exercises/chest-press.webp',
-  './assets/exercises/lat-pulldown.webp', './assets/exercises/seated-row.webp',
-  './assets/exercises/leg-press.webp', './assets/exercises/leg-curl.webp',
-  './assets/exercises/shoulder-press.webp', './assets/exercises/foam-calf.webp',
-  './assets/exercises/foam-quad.webp', './assets/exercises/foam-glute.webp',
-  './assets/exercises/foam-back.webp', './assets/exercises/foam-thoracic.webp'
+  './manifest.webmanifest', './offline.html', './icon-192.png', './icon-512.png',
+  './band-circles.webp', './band-pull-apart.webp',
+  './band-face-pull.webp', './band-squat.webp',
+  './treadmill-walk.webp', './chest-press.webp',
+  './lat-pulldown.webp', './seated-row.webp',
+  './leg-press.webp', './leg-curl.webp',
+  './shoulder-press.webp', './foam-calf.webp',
+  './foam-quad.webp', './foam-glute.webp',
+  './foam-back.webp', './foam-thoracic.webp'
 ];
 
 self.addEventListener('install', (event) => {
@@ -36,3 +36,4 @@ self.addEventListener('fetch', (event) => {
     return response;
   })));
 });
+

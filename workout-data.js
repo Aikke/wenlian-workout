@@ -1,4 +1,4 @@
-(function (root, factory) {
+﻿(function (root, factory) {
   const data = factory();
   if (typeof module !== 'undefined' && module.exports) module.exports = data;
   root.WorkoutData = data;
@@ -6,47 +6,47 @@
   const workoutPlan = [
     {
       id: 'warmup',
-      label: '热身',
+      label: '鐑韩',
       tone: 'orange',
-      description: '用弹力带唤醒肩背和下肢，再用快走把体温拉起来。',
+      description: '鐢ㄥ脊鍔涘甫鍞ら啋鑲╄儗鍜屼笅鑲紝鍐嶇敤蹇蛋鎶婁綋娓╂媺璧锋潵銆?,
       steps: [
-        { id: 'band-circles', kind: 'movement', name: '弹力带肩部绕环', subtitle: '肩胛活动 · 小幅度、慢速度', equipment: '弹力带', reps: 15, duration: 45, pauseable: true, image: 'assets/exercises/band-circles.webp' },
-        { id: 'band-pull-apart', kind: 'movement', name: '弹力带拉开', subtitle: '胸背打开 · 保持肋骨下沉', equipment: '弹力带', reps: 15, duration: 45, pauseable: true, image: 'assets/exercises/band-pull-apart.webp' },
-        { id: 'band-face-pull', kind: 'movement', name: '弹力带面拉', subtitle: '肩后束唤醒 · 手肘向外', equipment: '弹力带', reps: 15, duration: 45, pauseable: true, image: 'assets/exercises/band-face-pull.webp' },
-        { id: 'band-squat', kind: 'movement', name: '弹力带深蹲', subtitle: '膝盖对准脚尖 · 起身呼气', equipment: '弹力带', reps: 15, duration: 60, pauseable: true, image: 'assets/exercises/band-squat.webp' },
-        { id: 'treadmill-walk', kind: 'movement', name: '跑步机快走', subtitle: '能说完整句子即可 · 不追求速度', equipment: '跑步机', duration: 600, pauseable: true, image: 'assets/exercises/treadmill-walk.webp' },
+        { id: 'band-circles', kind: 'movement', name: '寮瑰姏甯﹁偐閮ㄧ粫鐜?, subtitle: '鑲╄儧娲诲姩 路 灏忓箙搴︺€佹參閫熷害', equipment: '寮瑰姏甯?, reps: 15, duration: 45, pauseable: true, image: 'band-circles.webp' },
+        { id: 'band-pull-apart', kind: 'movement', name: '寮瑰姏甯︽媺寮€', subtitle: '鑳歌儗鎵撳紑 路 淇濇寔鑲嬮涓嬫矇', equipment: '寮瑰姏甯?, reps: 15, duration: 45, pauseable: true, image: 'band-pull-apart.webp' },
+        { id: 'band-face-pull', kind: 'movement', name: '寮瑰姏甯﹂潰鎷?, subtitle: '鑲╁悗鏉熷敜閱?路 鎵嬭倶鍚戝', equipment: '寮瑰姏甯?, reps: 15, duration: 45, pauseable: true, image: 'band-face-pull.webp' },
+        { id: 'band-squat', kind: 'movement', name: '寮瑰姏甯︽繁韫?, subtitle: '鑶濈洊瀵瑰噯鑴氬皷 路 璧疯韩鍛兼皵', equipment: '寮瑰姏甯?, reps: 15, duration: 60, pauseable: true, image: 'band-squat.webp' },
+        { id: 'treadmill-walk', kind: 'movement', name: '璺戞鏈哄揩璧?, subtitle: '鑳借瀹屾暣鍙ュ瓙鍗冲彲 路 涓嶈拷姹傞€熷害', equipment: '璺戞鏈?, duration: 600, pauseable: true, image: 'treadmill-walk.webp' },
       ],
     },
     {
       id: 'strength',
-      label: '正式训练',
+      label: '姝ｅ紡璁粌',
       tone: 'blue',
-      description: '每个动作 3 组 × 12 次。选择能稳定完成、还留 2–3 次余力的重量。',
+      description: '姣忎釜鍔ㄤ綔 3 缁?脳 12 娆°€傞€夋嫨鑳界ǔ瀹氬畬鎴愩€佽繕鐣?2鈥? 娆′綑鍔涚殑閲嶉噺銆?,
       steps: [
-        { id: 'chest-press', kind: 'movement', name: '坐姿推胸', subtitle: '胸部 · 背部贴垫，推起时呼气', equipment: '固定器械', sets: 3, reps: 12, duration: 180, pauseable: true, image: 'assets/exercises/chest-press.webp' },
-        { id: 'changeover-chest-to-lat', kind: 'transition', name: '换器械 · 高位下拉', subtitle: '擦拭器械，调好座椅和重量', equipment: '换器械', duration: 60, pauseable: true, image: 'assets/exercises/lat-pulldown.webp' },
-        { id: 'lat-pulldown', kind: 'movement', name: '高位下拉', subtitle: '背部 · 把手拉向锁骨上方', equipment: '固定器械', sets: 3, reps: 12, duration: 180, pauseable: true, image: 'assets/exercises/lat-pulldown.webp' },
-        { id: 'changeover-lat-to-row', kind: 'transition', name: '换器械 · 坐姿划船', subtitle: '移动到下一台器械，保持呼吸平稳', equipment: '换器械', duration: 60, pauseable: true, image: 'assets/exercises/seated-row.webp' },
-        { id: 'seated-row', kind: 'movement', name: '坐姿划船', subtitle: '背部 · 先收肩胛，再拉手柄', equipment: '固定器械', sets: 3, reps: 12, duration: 180, pauseable: true, image: 'assets/exercises/seated-row.webp' },
-        { id: 'changeover-row-to-legpress', kind: 'transition', name: '换器械 · 腿举', subtitle: '找到空闲腿举机并调整靠背', equipment: '换器械', duration: 60, pauseable: true, image: 'assets/exercises/leg-press.webp' },
-        { id: 'leg-press', kind: 'movement', name: '坐姿腿举', subtitle: '腿部 · 膝盖不要锁死', equipment: '固定器械', sets: 3, reps: 12, duration: 180, pauseable: true, image: 'assets/exercises/leg-press.webp' },
-        { id: 'changeover-legpress-to-curl', kind: 'transition', name: '换器械 · 腿弯举', subtitle: '调整膝关节轴线，重量从轻开始', equipment: '换器械', duration: 60, pauseable: true, image: 'assets/exercises/leg-curl.webp' },
-        { id: 'leg-curl', kind: 'movement', name: '坐姿腿弯举', subtitle: '腿后侧 · 回程控制速度', equipment: '固定器械', sets: 3, reps: 12, duration: 180, pauseable: true, image: 'assets/exercises/leg-curl.webp' },
-        { id: 'changeover-curl-to-shoulder', kind: 'transition', name: '换器械 · 坐姿肩推', subtitle: '调整靠背，选择能稳定完成的重量', equipment: '换器械', duration: 60, pauseable: true, image: 'assets/exercises/shoulder-press.webp' },
-        { id: 'shoulder-press', kind: 'movement', name: '坐姿肩推', subtitle: '肩部 · 不要耸肩，动作留余力', equipment: '固定器械', sets: 3, reps: 12, duration: 180, pauseable: true, image: 'assets/exercises/shoulder-press.webp' },
+        { id: 'chest-press', kind: 'movement', name: '鍧愬Э鎺ㄨ兏', subtitle: '鑳搁儴 路 鑳岄儴璐村灚锛屾帹璧锋椂鍛兼皵', equipment: '鍥哄畾鍣ㄦ', sets: 3, reps: 12, duration: 180, pauseable: true, image: 'chest-press.webp' },
+        { id: 'changeover-chest-to-lat', kind: 'transition', name: '鎹㈠櫒姊?路 楂樹綅涓嬫媺', subtitle: '鎿︽嫮鍣ㄦ锛岃皟濂藉骇妞呭拰閲嶉噺', equipment: '鎹㈠櫒姊?, duration: 60, pauseable: true, image: 'lat-pulldown.webp' },
+        { id: 'lat-pulldown', kind: 'movement', name: '楂樹綅涓嬫媺', subtitle: '鑳岄儴 路 鎶婃墜鎷夊悜閿侀涓婃柟', equipment: '鍥哄畾鍣ㄦ', sets: 3, reps: 12, duration: 180, pauseable: true, image: 'lat-pulldown.webp' },
+        { id: 'changeover-lat-to-row', kind: 'transition', name: '鎹㈠櫒姊?路 鍧愬Э鍒掕埞', subtitle: '绉诲姩鍒颁笅涓€鍙板櫒姊帮紝淇濇寔鍛煎惛骞崇ǔ', equipment: '鎹㈠櫒姊?, duration: 60, pauseable: true, image: 'seated-row.webp' },
+        { id: 'seated-row', kind: 'movement', name: '鍧愬Э鍒掕埞', subtitle: '鑳岄儴 路 鍏堟敹鑲╄儧锛屽啀鎷夋墜鏌?, equipment: '鍥哄畾鍣ㄦ', sets: 3, reps: 12, duration: 180, pauseable: true, image: 'seated-row.webp' },
+        { id: 'changeover-row-to-legpress', kind: 'transition', name: '鎹㈠櫒姊?路 鑵夸妇', subtitle: '鎵惧埌绌洪棽鑵夸妇鏈哄苟璋冩暣闈犺儗', equipment: '鎹㈠櫒姊?, duration: 60, pauseable: true, image: 'leg-press.webp' },
+        { id: 'leg-press', kind: 'movement', name: '鍧愬Э鑵夸妇', subtitle: '鑵块儴 路 鑶濈洊涓嶈閿佹', equipment: '鍥哄畾鍣ㄦ', sets: 3, reps: 12, duration: 180, pauseable: true, image: 'leg-press.webp' },
+        { id: 'changeover-legpress-to-curl', kind: 'transition', name: '鎹㈠櫒姊?路 鑵垮集涓?, subtitle: '璋冩暣鑶濆叧鑺傝酱绾匡紝閲嶉噺浠庤交寮€濮?, equipment: '鎹㈠櫒姊?, duration: 60, pauseable: true, image: 'leg-curl.webp' },
+        { id: 'leg-curl', kind: 'movement', name: '鍧愬Э鑵垮集涓?, subtitle: '鑵垮悗渚?路 鍥炵▼鎺у埗閫熷害', equipment: '鍥哄畾鍣ㄦ', sets: 3, reps: 12, duration: 180, pauseable: true, image: 'leg-curl.webp' },
+        { id: 'changeover-curl-to-shoulder', kind: 'transition', name: '鎹㈠櫒姊?路 鍧愬Э鑲╂帹', subtitle: '璋冩暣闈犺儗锛岄€夋嫨鑳界ǔ瀹氬畬鎴愮殑閲嶉噺', equipment: '鎹㈠櫒姊?, duration: 60, pauseable: true, image: 'shoulder-press.webp' },
+        { id: 'shoulder-press', kind: 'movement', name: '鍧愬Э鑲╂帹', subtitle: '鑲╅儴 路 涓嶈鑰歌偐锛屽姩浣滅暀浣欏姏', equipment: '鍥哄畾鍣ㄦ', sets: 3, reps: 12, duration: 180, pauseable: true, image: 'shoulder-press.webp' },
       ],
     },
     {
       id: 'cooldown',
-      label: '泡沫轴放松',
+      label: '娉℃搏杞存斁鏉?,
       tone: 'mint',
-      description: '以舒服的压力滚动，不追求疼痛；出现麻木或刺痛就停止。',
+      description: '浠ヨ垝鏈嶇殑鍘嬪姏婊氬姩锛屼笉杩芥眰鐤肩棝锛涘嚭鐜伴夯鏈ㄦ垨鍒虹棝灏卞仠姝€?,
       steps: [
-        { id: 'foam-calf', kind: 'movement', name: '小腿泡沫轴', subtitle: '脚踝到膝下 · 发现酸点停留呼吸', equipment: '泡沫轴', duration: 45, pauseable: true, image: 'assets/exercises/foam-calf.webp' },
-        { id: 'foam-quad', kind: 'movement', name: '大腿前侧泡沫轴', subtitle: '髋部到膝上 · 保持核心稳定', equipment: '泡沫轴', duration: 60, pauseable: true, image: 'assets/exercises/foam-quad.webp' },
-        { id: 'foam-glute', kind: 'movement', name: '臀部泡沫轴', subtitle: '左右各半 · 轻柔滚动', equipment: '泡沫轴', duration: 60, pauseable: true, image: 'assets/exercises/foam-glute.webp' },
-        { id: 'foam-back', kind: 'movement', name: '背部泡沫轴', subtitle: '胸椎区域 · 避开腰椎直接压迫', equipment: '泡沫轴', duration: 60, pauseable: true, image: 'assets/exercises/foam-back.webp' },
-        { id: 'foam-thoracic', kind: 'movement', name: '胸椎伸展', subtitle: '泡沫轴横放 · 配合深呼吸', equipment: '泡沫轴', duration: 45, pauseable: true, image: 'assets/exercises/foam-thoracic.webp' },
+        { id: 'foam-calf', kind: 'movement', name: '灏忚吙娉℃搏杞?, subtitle: '鑴氳笣鍒拌啙涓?路 鍙戠幇閰哥偣鍋滅暀鍛煎惛', equipment: '娉℃搏杞?, duration: 45, pauseable: true, image: 'foam-calf.webp' },
+        { id: 'foam-quad', kind: 'movement', name: '澶ц吙鍓嶄晶娉℃搏杞?, subtitle: '楂嬮儴鍒拌啙涓?路 淇濇寔鏍稿績绋冲畾', equipment: '娉℃搏杞?, duration: 60, pauseable: true, image: 'foam-quad.webp' },
+        { id: 'foam-glute', kind: 'movement', name: '鑷€閮ㄦ场娌酱', subtitle: '宸﹀彸鍚勫崐 路 杞绘煍婊氬姩', equipment: '娉℃搏杞?, duration: 60, pauseable: true, image: 'foam-glute.webp' },
+        { id: 'foam-back', kind: 'movement', name: '鑳岄儴娉℃搏杞?, subtitle: '鑳告鍖哄煙 路 閬垮紑鑵版鐩存帴鍘嬭揩', equipment: '娉℃搏杞?, duration: 60, pauseable: true, image: 'foam-back.webp' },
+        { id: 'foam-thoracic', kind: 'movement', name: '鑳告浼稿睍', subtitle: '娉℃搏杞存í鏀?路 閰嶅悎娣卞懠鍚?, equipment: '娉℃搏杞?, duration: 45, pauseable: true, image: 'foam-thoracic.webp' },
       ],
     },
   ];
@@ -63,9 +63,9 @@
         expanded.push({
           id: `${step.id}-rest-${setNumber}`,
           kind: 'rest',
-          name: setNumber === step.sets ? `完成 · ${step.name}` : `组间休息 · ${step.name}`,
-          subtitle: setNumber === step.sets ? '放松呼吸，准备换器械' : '喝一口水，保持呼吸平稳',
-          equipment: '休息',
+          name: setNumber === step.sets ? `瀹屾垚 路 ${step.name}` : `缁勯棿浼戞伅 路 ${step.name}`,
+          subtitle: setNumber === step.sets ? '鏀炬澗鍛煎惛锛屽噯澶囨崲鍣ㄦ' : '鍠濅竴鍙ｆ按锛屼繚鎸佸懠鍚稿钩绋?,
+          equipment: '浼戞伅',
           duration: 70,
           pauseable: true,
           image: step.image,
@@ -84,3 +84,4 @@
 
   return { workoutPlan, flattenSteps, getPlanDurationSeconds };
 }));
+
